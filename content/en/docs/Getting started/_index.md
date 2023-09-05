@@ -1,35 +1,49 @@
 ---
-title: Getting Started
-description: What does your user need to know to try your project?
-categories: [Examples, Placeholders]
-tags: [test, docs]
+title: "Getting Started"
+linkTitle: "Getting Started"
 weight: 2
+keywords: ["Kitex", "Golang", "Go", "Getting Started", "Guidelines"]
+description: "This document covers the preparation of the development environment, quick start and basic tutorials of Kitex."
 ---
-
-{{% pageinfo %}}
-This is a placeholder page that shows you how to use this template site.
-{{% /pageinfo %}}
-
-Information in this section helps your user try your project themselves.
-
-* What do your users need to do to start using your project? This could include downloading/installation instructions, including any prerequisites or system requirements.
-
-* Introductory “Hello World” example, if appropriate. More complex tutorials should live in the Tutorials section.
-
-Consider using the headings below for your getting started page. You can delete any that are not applicable to your project.
 
 ## Prerequisites
 
-Are there any system requirements for using your project? What languages are supported (if any)? Do users need to already have any software or tools installed?
+1. If you don't have the golang development environment set up, please follow 
+2. We strongly recommend that you use the latest version of golang.
+3. Make sure that
 
-## Installation
+## Quick Start
 
-Where can your user find your project code? How can they install it (binaries, installable package, build from source)? Are there multiple options/versions they can install and how should they choose the right one for them?
+This chapter will get you started with Kitex using a simple executable example.
 
-## Setup
+### Install the compiler
 
-Is there any initial setup users need to do after installation to try your project?
 
-## Try it out!
+### Get the example
 
-Can your users test their installation, for example by running a command or deploying a Hello World example?
+
+### Run the example
+
+### Create project directory
+
+Let's create a directory to setup project.
+
+`$ mkdir example`
+
+enter directory
+
+`$ cd example`
+
+#### Install
+
+XXXXX
+
+#### Usage
+
+代码示例
+
+### Compile and Run
+
+xxxxxxxxx
+
+Now, `Echo` service is running!

@@ -1,14 +1,8 @@
+
 ---
-title: "TechOS-Dokumentasjon"
-linkTitle: "Dokumentasjon"
-weight: 20
+title: "文档"
+linkTitle: "文档"
 menu:
   main:
-    weight: 20
+    weight: 1
 ---
-
-Dette er landingssiden til en seksjon på øverste nivå.
-
-* Oppsummer
-* Seksjonen din
-* Her

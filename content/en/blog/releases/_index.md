@@ -1,4 +1,5 @@
 ---
-title: Releases
-weight: 20
+title: "Release"
+linkTitle: "Release"
+weight: 1
 ---
