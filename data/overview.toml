@@ -40,43 +40,43 @@ how_it_work_href = ""
 # 出品方信息
 [[created_by_info]]
 href = '/'
-imgSrc = '/img/usedby/bytedance.png'
+imgSrc = './img/usedby/bytedance.png'
 alt = 'bytedance logo'
 
 # 谁在用的信息
 [[used_by_info]]
 href = 'https://www.douyin.com/'
-imgSrc = '/img/usedby/douyin.png'
+imgSrc = './img/usedby/douyin.png'
 alt = 'douyin logo'
 
 [[used_by_info]]
 href = 'https://www.toutiao.com/'
-imgSrc = '/img/usedby/toutiao.png'
+imgSrc = './img/usedby/toutiao.png'
 alt = 'toutiao logo'
 
 [[used_by_info]]
 href = 'https://www.ixigua.com/'
-imgSrc = '/img/usedby/xigua.png'
+imgSrc = './img/usedby/xigua.png'
 alt = 'xigua logo'
 
 [[used_by_info]]
 href = 'https://www.dongchedi.com/'
-imgSrc = '/img/usedby/dongchedi.png'
+imgSrc = './img/usedby/dongchedi.png'
 alt = 'dongchedi logo'
 
 [[used_by_info]]
 href = 'https://www.capcut.cn/'
-imgSrc = '/img/usedby/jianying.png'
+imgSrc = './img/usedby/jianying.png'
 alt = 'jianying logo'
 
 [[used_by_info]]
 href = 'https://fanqienovel.com/'
-imgSrc = '/img/usedby/fanqie.png'
+imgSrc = './img/usedby/fanqie.png'
 alt = 'fanqie logo'
 
 [[used_by_info]]
 href = 'https://www.feishu.com/'
-imgSrc = '/img/usedby/feishu.png'
+imgSrc = './img/usedby/feishu.png'
 alt = 'feishu logo'
 
 # 底部展示文档内容

@@ -1,7 +1,7 @@
-# Docsy Example
+# Website Template
 
-[Docsy][] is a [Hugo theme module][] for technical documentation sites, providing easy
-site navigation, structure, and more. This **Docsy Example Project** uses the Docsy
+This Website Template is based on [Docsy][] which is a [Hugo theme module][] for technical documentation sites, providing easy
+site navigation, structure, and more. This **Website Template** uses the Docsy
 theme component as a hugo module and provides a skeleton documentation structure for you to use.
 You can clone/copy this project and edit it with your own content, or use it as an example.
 

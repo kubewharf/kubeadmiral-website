@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "Goldydocs"
+title = "Template"
 
 # Language settings
 contentDir = "content/en"
@@ -72,7 +72,7 @@ contentDir = "content/zh"
 languageName = "中文"
 [languages.zh-cn.params]
 title = "Goldydocs"
-description = "中文内容测试"
+description = "Docsy示例网站"
 time_format_default = "2006.02.01"
 time_format_blog = "2006.02.01"
 
