@@ -39,7 +39,7 @@ how_it_work_href = ""
 
 # 出品方信息
 [[created_by_info]]
-href = '/'
+href = 'https://www.bytedance.com/'
 imgSrc = './img/usedby/bytedance.png'
 alt = 'bytedance logo'
 

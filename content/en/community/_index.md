@@ -38,6 +38,6 @@ menu:
     </li>
   </ul>
   <p>
-    You can find out how to contribute to these docs in our <a href="https://github.com/Project_Name/kitex/blob/develop/CONTRIBUTING.md">Contribution Guidelines</a>.
+    You can find out how to contribute to these docs in our <a href="https://github.com/WillemJiang/docsy-template/blob/main/CONTRIBUTING.md">Contribution Guidelines</a>.
   </p>
 </div>
