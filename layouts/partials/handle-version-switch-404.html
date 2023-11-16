@@ -1,0 +1,9 @@
+<script type='text/javascript'>
+  (function() {
+    var sameBaseUrlRegExp = new RegExp('^' + location.protocol + '//' + location.host.replace('.', '\\.') + '/.*', 'i');
+    var babitmfDocumentationUrlRegExp = new RegExp('^https?://(.+\\.)?babitmf.github.io/.*', 'i');
+    if (!sameBaseUrlRegExp.test(document.referrer) && babitmfDocumentationUrlRegExp.test(document.referrer)) {
+      location.replace('/');
+    }
+  })();
+</script>

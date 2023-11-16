@@ -1,6 +1,13 @@
-/*
+/* full override: we're not tracking changes to the docsy base file. */
 
-Add styles or override variables from the theme here.
+$primary: #3c8fa8;
+$secondary: #086480;
+$dark: #024053;
 
-*/
+a.babitmf-link {
+    color: #3996ec;
+}
 
+a.babitmf-link:hover {
+    color: #fff;
+}
