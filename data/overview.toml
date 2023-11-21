@@ -83,4 +83,4 @@ alt = 'feishu logo'
 [[docs_info]]
 href = "/docs"
 name = "文档名称"
-name_en = "DocsEnglishName"
+name_en = "Kubeadmiral Docs"
