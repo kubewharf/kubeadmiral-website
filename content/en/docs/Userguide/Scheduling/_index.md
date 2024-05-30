@@ -1,6 +1,6 @@
 ---
 title: "Automatic propagation of associated resources"
-weight: 5
+weight: 1
 ---
 
 ## What are associated resources
@@ -73,14 +73,14 @@ The format for specifying associated resources using Annotations is as follows:
 
 Different associated resources have different field configurations in the Annotation, as follows:
 
-| kind | group | name          | Anonotation 配置举例 |
-| --- | --- |---------------| --- |
-| ConfigMap | "" | resource name | kubeadmiral.io/followers: '\[{"group": "", "kind": "ConfigMap", "name": "configmap-name"}\]' |
-| Secret | "" | resource name        | kubeadmiral.io/followers: '\[{"group": "", "kind": "Secret", "name": "secret-name"}\]' |
-| Service | "" | resource name        | kubeadmiral.io/followers: '\[{"group": "", "kind": "Service", "name": "service-name"}\]' |
-| PersistentVolumeClaim | "" | resource name        | kubeadmiral.io/followers: '\[{"group": "", "kind": "PersistentVolumeClaim, "name": "pvc-name"}\]' |
-| ServiceAcount | "" | resource name        | kubeadmiral.io/followers: '\[{"group": "", "kind": "ServiceAcount, "name": "serviceacount-name"}\]' |
-| Ingress | networking.k8s.io | resource name        | kubeadmiral.io/followers: '\[{"group": "networking.k8s.io", "kind": "Ingress, "name": "ingress-name"}\]' |
+| kind | group | name           | Anonotation |
+| --- | --- |----------------| --- |
+| ConfigMap | "" | configmap-name | kubeadmiral.io/followers: '\[{"group": "", "kind": "ConfigMap", "name": "configmap-name"}\]' |
+| Secret | "" | secret-name    | kubeadmiral.io/followers: '\[{"group": "", "kind": "Secret", "name": "secret-name"}\]' |
+| Service | "" | service-name   | kubeadmiral.io/followers: '\[{"group": "", "kind": "Service", "name": "service-name"}\]' |
+| PersistentVolumeClaim | "" | pvc-name  | kubeadmiral.io/followers: '\[{"group": "", "kind": "PersistentVolumeClaim, "name": "pvc-name"}\]' |
+| ServiceAcount | "" | serviceacount-name  | kubeadmiral.io/followers: '\[{"group": "", "kind": "ServiceAcount, "name": "serviceacount-name"}\]' |
+| Ingress | networking.k8s.io | ingress-name  | kubeadmiral.io/followers: '\[{"group": "networking.k8s.io", "kind": "Ingress, "name": "ingress-name"}\]' |
 
 In this example, the Deployment is associated with two resources, namely Secret and Ingress.
 
