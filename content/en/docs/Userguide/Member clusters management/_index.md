@@ -5,13 +5,13 @@ weight: 1
 date: 2024-05-30
 ---
 
-# Prerequisites
+## Prerequisites
 
 - Kubectl v0.20.15+
 - KubeAdmiral cluster
 - Client cert, client key and CA information of the new member cluster
 
-# Associate member clusters
+## Associate member clusters
 
 1.Get the kubeconfig of the member cluster
 
@@ -82,7 +82,7 @@ CLUSTER_NAME           True    True     1m
 
 Note: The status of successfully associated member clusters should be `READY` and `JOINED`.
 
-# Dissociate member clusters
+## Dissociate member clusters
 
 6.Delete the `FederatedCluster` object corresponding to the member cluster in KubeAdmiral
 

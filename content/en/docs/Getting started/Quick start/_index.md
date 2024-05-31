@@ -3,12 +3,12 @@ title: "Quick start"
 linkTitle: "Quick start"
 weight: 2
 ---
-# Prerequisites
+## Prerequisites
 
 - Kubectl version v0.20.15+
 - KubeAdmiral cluster
 
-# Propagating deployment resources with KubeAdmiral
+## Propagating deployment resources with KubeAdmiral
 
 The most common use case for KubeAdmiral is to manage Kubernetes resources across multiple clusters with a single unified API. This section shows you how to propagate Deployments to multiple member clusters and view their respective statuses using KubeAdmiral.
 
