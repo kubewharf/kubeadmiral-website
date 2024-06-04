@@ -3,7 +3,7 @@ title: "Installation"
 linkTitle: "Installation"
 weight: 2
 ---
-# Prerequisites
+## Prerequisites
 
 Make sure the following tools are installed in the environment before installing KubeAdmiral:
 
@@ -11,7 +11,7 @@ Make sure the following tools are installed in the environment before installing
 - [Kind](https://kind.sigs.k8s.io/) version v0.14.0+
 - [Kubectl](https://github.com/kubernetes/kubectl) version v0.20.15+
 
-# Local installation
+## Local installation
 
 If you want to understand how KubeAdmiral works, you can easily start a cluster with KubeAdmiral control plane on your local computer.
 
