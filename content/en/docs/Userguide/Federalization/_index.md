@@ -7,10 +7,10 @@ description: KubeAdmiral offers the option to federate existing resources within
 
 ---
 ## What is Resource Federalization
-Assume there is a member cluster already associated with a host cluster, and it has deployed resources (such as Deployments) that are not managed by KubeAdmiral. In such cases, we can refer to the [How to Perform Resource Federalization](#section-1) section to directly hand over the management of those resources to KubeAdmiral without causing a restart of pods belonging to workload-type resources. This capability is provided by resource federalization.
-## How to perform Resource Federalization {#section-1}
+Assume there is a member cluster already associated with a host cluster, and it has deployed resources (such as Deployments) that are not managed by KubeAdmiral. In such cases, we can refer to the [How to Perform Resource Federalization](#how-to-perform-resource-federalization) section to directly hand over the management of those resources to KubeAdmiral without causing a restart of pods belonging to workload-type resources. This capability is provided by resource federalization.
+## How to perform Resource Federalization {#how-to-perform-resource-federalization}
 ### Before you begin
-Refer to the [Quickstart](https://kubeadmiral.io/docs/getting-started/quick-start/) section for a quick launch of KubeAdmiral.
+Refer to the [Quickstart](../../getting-started/quick-start/) section for a quick launch of KubeAdmiral.
 ### Create some resources in the member cluster
 1. Select the member cluster **kubeadmiral-member-1**. <br>
    ```Bash
@@ -62,11 +62,8 @@ Refer to the [Quickstart](https://kubeadmiral.io/docs/getting-started/quick-star
         run: my-nginx
     ```
 4. View the created resources. <br>
-   ```Bash
-   $ kubectl get pod,deploy,svc
-   ```
-    ```yaml 
-    ~/admiral > kubectl get pod,deploy,svc                                               
+    ```console
+    $ kubectl get pod,deploy,svc                                               
     NAME                            READY   STATUS    RESTARTS   AGE
     pod/my-nginx-5b56ccd65f-l7dm5   1/1     Running   0          29s
     pod/my-nginx-5b56ccd65f-ldfp4   1/1     Running   0          29s
@@ -119,11 +116,8 @@ Refer to the [Quickstart](https://kubeadmiral.io/docs/getting-started/quick-star
    $ export KUBECONFIG=$HOME/.kube/kubeadmiral/member-1.config
    ```
 2. Retrieve and save the YAML for Deployment resources in the member cluster. <br>
-   ```Bash
-   $ kubectl get deploy my-nginx -oyaml
-   ```
-    ```yaml 
-    ~/admiral > kubectl get deploy my-nginx -oyaml
+    ```console
+    $ kubectl get deploy my-nginx -oyaml
     apiVersion: apps/v1
     kind: Deployment
     metadata:
@@ -191,11 +185,8 @@ Refer to the [Quickstart](https://kubeadmiral.io/docs/getting-started/quick-star
       updatedReplicas: 2
     ```
 3. Retrieve and save the YAML for Service resources in the member cluster. <br>
-   ```Bash
-   $ kubectl get deploy my-nginx -oyaml
-   ```
-    ```yaml
-    ~/.admiral > kubectl get svc my-nginx -oyaml
+    ```console
+    $ kubectl get svc my-nginx -oyaml
     apiVersion: v1
     kind: Service
     metadata:
@@ -343,21 +334,15 @@ Refer to the [Quickstart](https://kubeadmiral.io/docs/getting-started/quick-star
    ```
 
 6. Create resources in the host cluster. <br>
-   ```Bash
-   $ kubectl apply -f ./resources.yaml
-   ```
-    ```yaml
-    ~/admiral > kubectl apply -f ./resources.yaml                                                                        
+    ```console
+    $ kubectl apply -f ./resources.yaml                                                                        
     deployment.apps/my-nginx created
     service/my-nginx created
     ```
 ### View the results of Resource Federalization
 1. Check the distribution status of host cluster resources, successfully distributed to the member cluster. <br>
-   ```Bash
-   $  kubectl get federatedobjects.core.kubeadmiral.io -oyaml
-   ```
-    ```yaml
-    ~/admiral > kubectl get federatedobjects.core.kubeadmiral.io -oyaml
+    ```console
+    $ kubectl get federatedobjects.core.kubeadmiral.io -oyaml
     apiVersion: v1
     items:
       - apiVersion: core.kubeadmiral.io/v1alpha1
@@ -527,11 +512,8 @@ Refer to the [Quickstart](https://kubeadmiral.io/docs/getting-started/quick-star
    ```
 
 4. View the status of pod resources in the member cluster, the restart has not been performed.<br>
-   ```Bash
-   $ kubectl get po
-   ```
-    ```yaml
-    ~/.kube > kubectl get po               
+    ```console
+    $ kubectl get po
     NAME                        READY   STATUS    RESTARTS   AGE
     my-nginx-5b56ccd65f-l7dm5   1/1     Running   0          4h49m
     my-nginx-5b56ccd65f-ldfp4   1/1     Running   0          4h49m 
