@@ -47,7 +47,7 @@ KubeAdmiral is a powerful multi-Kubernetes management engine that is compatible 
 ## **Architecture**
 The overall architecture of KubeAdmiral is shown as below:
 
-![Architecture](../General/architecture.png)
+![Architecture](../../img/kubeadmiral-architecture.png)
 
 The KubeAdmiral control plane runs in the host cluster and consists of the following components:
 - Fed ETCD: Stores the KubeAdmiral API objects and federated Kubernetes objects managed by KubeAdmiral.

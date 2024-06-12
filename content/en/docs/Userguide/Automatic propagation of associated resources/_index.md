@@ -1,6 +1,6 @@
 ---
 title: "Automatic propagation of associated resources"
-weight: 1
+weight: 3
 ---
 
 ## What are associated resources

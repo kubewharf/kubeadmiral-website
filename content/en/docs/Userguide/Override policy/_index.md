@@ -1,7 +1,7 @@
 ---
 title: "Override Policy"
 date: 2024-05-30
-weight: 6
+weight: 5
 keywords: ["override policy", "cluster override policy"]
 description: "OverridePolicy and ClusterOverridePolicy are used to manage the differential configuration of resources when propagated to different clusters."
 ---
