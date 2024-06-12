@@ -1,41 +1,42 @@
 
-project_short_desc = "项目的简短描述"
+project_short_desc = "强大的 Kubernetes 多集群管理系统"
 
-project_short_desc_en = "This is a short description content"
+project_short_desc_en = "A powerful multi-cluster management system for Kubernetes"
 
-why_choose_this = "请描述项目的优势和亮点"
+why_choose_this = "KubeAdmiral 扩展了 Kubernetes Federation v2 API，提供了与 Kubernetes 原生 API 的兼容性以及更强大的资源管理能力。"
 
-why_choose_this_en = "Please write the project highlights and features in here."
+why_choose_this_en = "KubeAdmiral extends the Kubernetes Federation v2 API, providing compatibility with the Kubernetes native API and more powerful resource management capabilities."
+
+# 原理图地址
+how_it_work_href = "./img/kubeadmiral-architecture.png"
 
 # 项目优势和特点（中文）
 [[features]]
-feature = "特征1"
-feature_desc = "特征1的简要描述内容"
+feature = "Kubernetes 原生 API"
+feature_desc = "兼容单集群资源类型，兼容多种原生kubernetes生态的组件，低成本从单集群迁移至多集群"
 
 [[features]]
-feature = "特征2"
-feature_desc = "特征2的简要描述内容"
+feature = "丰富且开放的调度能力"
+feature_desc = "支持丰富的内置调度插件以及可插拔的用户自定义插件，支持多种调度配置，可适用于多种场景"
 
 [[features]]
-feature = "特征3"
-feature_desc = "特征3的简要描述内容"
+feature = "高效、稳定、可拓展"
+feature_desc = "在大规模场景下经过有效验证，系统稳定性高，可拓展性强"
 
 
 # 项目优势和特点（英文）
 [[features_en]]
-feature = "Project_Feature_One"
-feature_desc = "Project_Feature_One_Desc"
+feature = "Kubernetes Native API"
+feature_desc = "Compatible with resource types and components of the native Kubernetes ecosystem, easily to migrate from single-cluster to multi-cluster."
 
 [[features_en]]
-feature = "Project_Feature_Two"
-feature_desc = "Project_Feature_Two_Desc"
+feature = "Rich and Open Scheduling Capabilities"
+feature_desc = "Supports a rich set of built-in scheduling plugins and pluggable user-defined plugins, supports a variety of scheduling configurations, and can be applied to a variety of scenarios."
 
 [[features_en]]
-feature = "Project_Feature_Three"
-feature_desc = "Project_Feature_Three_Desc"
+feature = "Efficient, Stable and Salable"
+feature_desc = "Effectively verified in large-scale scenarios, the system has high stability and strong scalability."
 
-# 原理图地址
-how_it_work_href = ""
 
 # 出品方信息
 [[created_by_info]]

@@ -1,7 +1,7 @@
 ---
 title: "Propagation Policy"
 linkTitle: "Propagation Policy"
-weight: 1
+weight: 2
 date: 2024-05-30
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Resource Federalization"
 linkTitle: "Resource Federalization"
-weight: 1
+weight: 4
 date: 2024-05-30
 description: KubeAdmiral offers the option to federate existing resources within a member cluster, making it convenient and efficient to take control of these resources. This article will guide you on how to perform resource federalization.
 

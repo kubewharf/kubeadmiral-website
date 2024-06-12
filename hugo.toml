@@ -1,7 +1,7 @@
 baseURL = "/kubeadmiral-website/"
 relativeURLS = true
 canonifyurls = true
-title = "Kubeadmiral"
+title = "KubeAdmiral"
 
 # Language settings
 contentDir = "content/en"
@@ -219,10 +219,10 @@ enable = false
 [params.footerLinks]
 [[params.footerLinks.items]]
 name = "About"
-url = "/about/"
+url = "/docs/overview/"
 [[params.footerLinks.items]]
 name = "License"
-url = "https://github.com/kubewharf/kubeadmiral-website/blob/main/LICENSE"
+url = "https://github.com/kubewharf/kubeadmiral/blob/main/LICENSE"
 
 # hugo module configuration
 
