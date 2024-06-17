@@ -83,15 +83,15 @@ NAME          READY   UP-TO-DATE   AVAILABLE   AGE
 echo-server   6/6     6            6           10m
 ```
 
-Meanwhile, we can also view the specific status of the propagated resources in each member cluster through the FederatedDeploymentStatus object:
+Meanwhile, we can also view the specific status of the propagated resources in each member cluster through the CollectedStatus object:
 
 ```Bash
-$ kubectl get fdeploystatus echo-server -oyaml
+$ kubectl get collectedstatuses echo-server-deployments.apps -oyaml
 
-apiVersion: types.kubeadmiral.io/v1alpha1
-kind: FederatedDeploymentStatus
+apiVersion: core.kubeadmiral.io/v1alpha1
+kind: CollectedStatus
 metadata:
-  name: dp
+  name: echo-server-deployments.apps
   namespace: default
 clusterStatus:
 - clusterName: kubeadmiral-member-1
