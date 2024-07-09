@@ -63,14 +63,19 @@ spec:
 
 For **Deployment** and **ReplicaSet**, KubeFed supports dividing the desired replicas across multiple clusters based on **ReplicaSchedulingPreference** (RSP). Users can configure the weights, minimum replicas, and maximum replicas for each cluster, and the RSP controller computes a valid replica distribution and updates the **Placement** and **Overrides** fields of **FederatedDeployment** or **FederatedReplicaSet**.
 
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center"><img src="./RSP Scheduling.jpeg" width="70%" /> </td>
+  </tr>
+  <tr>
+    <td align="center">RSP Scheduling (Image credit: https://www.kubernetes.org.cn/5702.html)</td>
+  </tr>
+</table>
+
 <br/>
-<div align="center">
-  <picture>
-    <img src="./RSP Scheduling.jpeg" width=70% title="Types of workloads" loading="eager" />
-  </picture>
-</div> 
-<br/>
-> RSP Scheduling (Image credit: https://www.kubernetes.org.cn/5702.html)
+
+
 
 KubeFed laid the foundation of Kubernetes cluster federation at ByteDance. However, we soon found KubeFed unable to meet our production requirements. The primary pain points were:
 
@@ -83,14 +88,18 @@ KubeFed laid the foundation of Kubernetes cluster federation at ByteDance. Howev
 
 With the evolution of cloud native infrastructure at ByteDance, we raised our standards for efficiency, scalability, performance, and cost. Meanwhile, the size and number of our Kubernetes clusters continue to grow phenomenally along with the businesses. Additionally, workloads beyond stateless microservices, including stateful services, storage, offline and machine learning jobs, started embracing cloud native technologies. Against this backdrop, the limitations of KubeFed became increasingly difficult to manage. Therefore, at the end of 2021, we began our endeavor to develop the next generation cluster federation system, building upon KubeFed v2’s foundation. We named it KubeAdmiral to capture our aspiration for it to manage multiple clusters as effectively as a seasoned navy admiral commands a fleet.
 
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center"><img src="./Timeline of Kubernetes at ByteDance.jpeg" width="70%" /> </td>
+  </tr>
+  <tr>
+    <td align="center">Timeline of Kubernetes at ByteDance</td>
+  </tr>
+</table>
+
 <br/>
-<div align="center">
-  <picture>
-    <img src="./Timeline of Kubernetes at ByteDance.jpeg" width=70% title="Types of workloads" loading="eager" />
-  </picture>
-</div> 
-<br/>
-> Timeline of Kubernetes at ByteDance
+
 
 KubeAdmiral offers enhanced multi-cluster orchestration and scheduling capabilities for various mainstream business scenarios. Today at ByteDance, KubeAdmiral manages more than 100,000 microservices with more than 10,000,000 pods running on dozens of federated Kubernetes clusters. It supports upwards of 30,000 upgrade and scaling operations daily, and maintains a stable deployment rate of 95-98% without the need for manual intervention.
 
@@ -98,14 +107,18 @@ KubeAdmiral offers enhanced multi-cluster orchestration and scheduling capabilit
 
 KubeAdmiral not only supports native Kubernetes resources and third-party custom resources, but also offers a rich and extensible scheduling framework. Moreover, it refines numerous aspects of scheduling and dispatching, backed by years of practical production experience.
 
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center"><img src="./KubeAdmiral architecture diagram.png" width="70%" /> </td>
+  </tr>
+  <tr>
+    <td align="center">KubeAdmiral architecture diagram</td>
+  </tr>
+</table>
+
 <br/>
-<div align="center">
-  <picture>
-    <img src="./KubeAdmiral architecture diagram.png" width=70% title="Types of workloads" loading="eager" />
-  </picture>
-</div> 
-<br/>
-> KubeAdmiral architecture diagram
+
 
 
 ### 1.Rich Multi-Cluster Scheduling Capabilities
@@ -210,14 +223,16 @@ spec:
 ### 2.Scheduler Extension
 Taking inspiration from kube-scheduler’s design, KubeAdmiral offers a flexible scheduling framework. It simplifies the scheduling process by dividing it into four distinct stages: Filter, Score, Select, and Replica. Each stage is handled by individual plugins, creating a logical separation that promotes modularity. For instance, in the provided PropagationPolicy example above, most behaviors are implemented through built-in scheduling plugins. The beauty of this approach is that plugins can be easily added or removed, without any impact on the remaining plugins. This greatly simplifies the scheduler logic and reduces its overall complexity. Although the built-in plugins in KubeAdmiral offer versatile features that cater to common use cases, users have the flexibility to enhance the functionality by creating their own custom scheduling plugins for specific niche scenarios. This empowers users to seamlessly integrate with internal or existing systems. The KubeAdmiral scheduler interacts with external plugins via the HTTP protocol, enabling users to extend the scheduling logic with minimal effort and without having to modify the KubeAdmiral control plane. The plugin only needs to output the desired placement, and KubeAdmiral takes care of binding and enforcing those results.
 
-<br/>
-<div align="center">
-  <picture>
-    <img src="./Scheduler stages and plugins.png" width=70% title="Types of workloads" loading="eager" />
-  </picture>
-</div> 
-<br/>
-> Scheduler stages and plugins
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center"><img src="./Scheduler stages and plugins.png" width="70%" /> </td>
+  </tr>
+  <tr>
+    <td align="center">Scheduler stages and plugins</td>
+  </tr>
+</table>
+
 
 ### 3. Automatic Migration of Unschedulable Workloads
 
