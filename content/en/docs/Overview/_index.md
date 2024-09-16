@@ -82,7 +82,7 @@ Kubernetes clusters that have been joined to the Federation Control Plane. Diffe
 
 The namespace in the Federation Control Plane refers to the Federated namespace. When a namespace is created in the Federation Control Plane, the system automatically creates the same Kubernetes namespace in all member clusters. In addition, the Federated Namespace has the same meaning and function as the namespace in Kubernetes, and can be used to achieve logical isolation of user resources and fine-grained user resource management.
 
-#### PropogationPolicy/ClusterPropagationPolicy
+#### PropаgationPolicy/ClusterPropagationPolicy
 
 KubeAdmiral defines the policy of multi-cluster resources propagation through PropogationPolicy/ClusterPropagationPolicy. According to the policies, multiple replicas of application instances can be distributed and deployed to specified member clusters. When a single cluster fails, application replicas can be flexibly scheduled to other clusters to ensure high availability of the business. Currently supported scheduling modes include replica duplicated or divided scheduling.
 
